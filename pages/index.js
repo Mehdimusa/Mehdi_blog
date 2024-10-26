@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
-import Date from '../components/date';
-import { getSortedPostsData } from '../lib/posts';
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
+import Date from "../components/date";
+import { getSortedPostsData } from "../lib/posts";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -14,17 +14,18 @@ export async function getStaticProps() {
   };
 }
 export default function Home({ allPostsData }) {
-
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>NEXTJS, Full stack devloper</p>
+        <p>Next.js & Flutter Specialist</p>
         <p>
-          This is a Single web page application - we will be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.
+          I am a Full Stack Developer with a focus on Next.js for web
+          applications and Flutter for mobile and cross-platform solutions. This
+          is a Single web page application - we will be building a site like
+          this on <a href="https://nextjs.org/learn">our Next.js tutorial</a>.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
