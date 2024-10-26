@@ -21,9 +21,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>NEXTJS ,Full stack devloper</p>
+        <p>NEXTJS, Full stack devloper</p>
         <p>
-          This is a Single web page application - we ’wil be building a site like this on{' '}
+          This is a Single web page application - we will be building a site like this on{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.
         </p>
       </section>
