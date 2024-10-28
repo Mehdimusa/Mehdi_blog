@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
         <p>Next.js & Flutter Specialist.
         Next.js & Flutter Specialist.
         Next.js & Flutter Specialist.
-        Next.js & Flutter Specialist.
+        Next.js & Flutter Specialist. Bakar
         </p>
         <p>
           I am a Full Stack Developer with a focus on Next.js for web
