@@ -20,7 +20,11 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Next.js & Flutter Specialist</p>
+        <p>Next.js & Flutter Specialist.
+        Next.js & Flutter Specialist.
+        Next.js & Flutter Specialist.
+        Next.js & Flutter Specialist.
+        </p>
         <p>
           I am a Full Stack Developer with a focus on Next.js for web
           applications and Flutter for mobile and cross-platform solutions. This
