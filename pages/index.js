@@ -29,6 +29,28 @@ export default function Home({ allPostsData }) {
           is a Single web page application - we will be building a site like
           this on <a href="https://nextjs.org/learn">our Next.js tutorial</a>.
         </p>
+
+        
+
+
+      </section>
+      {/* Work Experience Section */}
+      <section className={utilStyles.headingMd}>
+        <h2 className={utilStyles.headingLg}>Work Experience</h2>
+        <ul>
+          <li>
+            <strong>Full Stack Developer</strong> at Ausbiz consulting (April 2025 - july 2025)<br />
+            Developed web applications using Next.js and mobile apps with Flutter.
+          </li>
+          <li>
+            <strong>Python and Nextjs intern </strong> at HT labs(Hindustan Times <Link href="https://www.ottplay.com/">link</Link>) (2023 March  - 2023 September)<br />
+            <ul>
+              <li>Developed and executed load testing scripts to assess web application performance and ensure scalability under high traffic.</li>
+              <li>Contributed to scripting and optimizing dynamic web pages using React.js and Next.js, enhancing user experience and front-end efficiency.</li>
+            </ul>
+
+          </li>
+        </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
