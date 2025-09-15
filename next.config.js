@@ -2,6 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  // Force cache busting
+  generateBuildId: () => 'build-' + Date.now(),
   // Ensure all routes are generated at build time
   async generateBuildId() {
     // You can, for example, get the latest git commit hash here
