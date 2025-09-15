@@ -1,27 +1,104 @@
-html,
+:root {
+  --primary-color: #0070f3;
+  --secondary-color: #00a8e8;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --gray-light: #f0f0f0;
+  --gray-medium: #666666;
+  --transition-speed: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-  color: #0070f3;
+  color: var(--primary-color);
   text-decoration: none;
+  transition: all var(--transition-speed) ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
+  border-radius: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin: 2rem 0 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+code {
+  background: var(--gray-light);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--gray-medium);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
 }

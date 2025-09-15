@@ -20,16 +20,70 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Next.js & Flutter Specialist.
-        
-        </p>
+        <p className={utilStyles.introduction}>Full-Stack Developer</p>
         <p>
-          I am a Full Stack Developer with a focus on Next.js for web
-          applications and Flutter for mobile and cross-platform solutions. This
-          is a Single web page application - we will be building a site like
-          this on <a href="https://nextjs.org/learn">our Next.js tutorial</a>.
+          I am a Full Stack Developer specializing in Next.js and React.js, passionate about creating modern web experiences.
+          With expertise in building responsive web applications, implementing AI-driven solutions, and optimizing application
+          performance to deliver exceptional user experiences.
         </p>
       </section>
+      
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Professional Experience</h2>
+        <div className={utilStyles.experienceGrid}>
+          <div className={utilStyles.experienceCard}>
+            <h3>Full-Stack Developer</h3>
+            <p className={utilStyles.company}>iLearning Solutions Pty Ltd | Adelaide</p>
+            <p className={utilStyles.duration}>August 2025 - Present</p>
+            <ul className={utilStyles.experienceList}>
+              <li>Leading website modernization using Next.js</li>
+              <li>Implementing MongoDB-based data structures</li>
+              <li>Enhancing website performance and SEO</li>
+            </ul>
+          </div>
+
+          <div className={utilStyles.experienceCard}>
+            <h3>Full Stack Developer Intern</h3>
+            <p className={utilStyles.company}>Auzbiz Consulting | Sydney</p>
+            <p className={utilStyles.duration}>April 2025 - July 2025</p>
+            <ul className={utilStyles.experienceList}>
+              <li>Developed AI chatbots for customer interaction</li>
+              <li>Built responsive websites with React.js and Next.js</li>
+              <li>Implemented full-stack features and optimizations</li>
+            </ul>
+          </div>
+
+          <div className={utilStyles.experienceCard}>
+            <h3>Python Intern</h3>
+            <p className={utilStyles.company}>Hindustan Times Labs | Mumbai</p>
+            <p className={utilStyles.duration}>March 2023 - August 2023</p>
+            <ul className={utilStyles.experienceList}>
+              <li>Created load testing and automation scripts</li>
+              <li>Supported development teams with testing</li>
+              <li>Improved application performance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Featured Projects</h2>
+        <div className={utilStyles.projectGrid}>
+          <div className={utilStyles.projectCard}>
+            <h3>Personal Blog Platform</h3>
+            <p>A modern blog built with Next.js featuring SSR, SSG, and dynamic routing.</p>
+            <p className={utilStyles.techStack}>
+              <strong>Tech:</strong> Next.js, React, CSS Modules, Markdown
+            </p>
+            <a href="https://github.com/Mehdimusa/Mehdi_blog" className={utilStyles.projectLink}>
+              View Project →
+            </a>
+          </div>
+          
+          {/* Add more project cards here */}
+        </div>
+      </section>
+
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>

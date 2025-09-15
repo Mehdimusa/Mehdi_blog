@@ -4,6 +4,11 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideIn 0.5s ease-out;
   }
   
   .headingXl {
@@ -12,21 +17,49 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    position: relative;
+    animation: slideIn 0.5s ease-out;
   }
   
   .headingLg {
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
+    position: relative;
+    display: inline-block;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  .headingLg::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .headingLg:hover::after {
+    transform: scaleX(1);
   }
   
   .headingMd {
     font-size: 1.2rem;
     line-height: 1.5;
+    animation: fadeIn 0.5s ease-out;
   }
   
   .borderCircle {
     border-radius: 9999px;
+    transition: transform var(--transition-speed) ease;
+  }
+  
+  .borderCircle:hover {
+    transform: scale(1.05);
   }
   
   .colorInherit {
@@ -41,12 +74,194 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    animation: fadeIn 0.5s ease-out;
   }
   
   .listItem {
     margin: 0 0 1.25rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all var(--transition-speed) ease;
+    border: 1px solid transparent;
+  }
+  
+  .listItem:hover {
+    background-color: var(--gray-light);
+    border-color: var(--primary-color);
+    transform: translateX(5px);
   }
   
   .lightText {
-    color: #666;
+    color: var(--gray-medium);
+  }
+
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .projectCard {
+    padding: 1.5rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    background: var(--background-color);
+    transition: all var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .projectCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-speed) ease;
+  }
+
+  .projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-color: transparent;
+  }
+
+  .projectCard:hover::before {
+    transform: scaleX(1);
+  }
+
+  .projectCard h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .projectCard p {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+  }
+
+  .techStack {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background: var(--gray-light);
+    display: inline-block;
+  }
+
+  .projectLink {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all var(--transition-speed) ease;
+  }
+
+  .projectLink:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateX(5px);
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .introduction {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .experienceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .experienceCard {
+    padding: 1.5rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    background: var(--background-color);
+    transition: all var(--transition-speed) ease;
+  }
+
+  .experienceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-color);
+  }
+
+  .experienceCard h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+  }
+
+  .company {
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+  }
+
+  .duration {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 1rem;
+  }
+
+  .experienceList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .experienceList li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .experienceList li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
   }
