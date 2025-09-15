@@ -200,6 +200,62 @@
     }
   }
 
+  .experienceList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .experienceItem {
+    padding: 1.5rem;
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    transition: all var(--transition-speed) ease;
+  }
+
+  .experienceItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border-color: var(--primary-color);
+  }
+
+  .experienceTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .company {
+    color: var(--gray-medium);
+    font-weight: normal;
+  }
+
+  .duration {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-bottom: 1rem;
+  }
+
+  .experienceList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .experienceList li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .experienceList li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+  }
+
   .introduction {
     font-size: 1.4rem;
     font-weight: 600;

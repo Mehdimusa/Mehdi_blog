@@ -26,63 +26,49 @@ export default function Home({ allPostsData }) {
           Experienced in building responsive web applications, implementing AI-driven solutions, and optimizing application
           performance. Committed to delivering exceptional user experiences through clean, efficient, and scalable code.
         </p>
-
-        
-
-
       </section>
-      {/* Work Experience Section */}
+
       <section className={utilStyles.headingMd}>
         <h2 className={utilStyles.headingLg}>Work Experience</h2>
-        <ul>
-          <li>
-            <strong>Full Stack Developer</strong> at Ausbiz consulting (April 2025 - july 2025)<br />
-            Developed web applications using Next.js and mobile apps with Flutter.
-          </li>
-          <li>
-            <strong>Python and Nextjs intern </strong> at HT labs(Hindustan Times <Link href="https://www.ottplay.com/">link</Link>) (2023 March  - 2023 September)<br />
-            <ul>
-              <li>Developed and executed load testing scripts to assess web application performance and ensure scalability under high traffic.</li>
-              <li>Contributed to scripting and optimizing dynamic web pages using React.js and Next.js, enhancing user experience and front-end efficiency.</li>
-            </ul>
-
-          </li>
-        </ul>
-      </section>
-      
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Professional Experience</h2>
-        <div className={utilStyles.experienceGrid}>
-          <div className={utilStyles.experienceCard}>
-            <h3>Full-Stack Developer</h3>
-            <p className={utilStyles.company}>iLearning Solutions Pty Ltd | Adelaide</p>
+        <div className={utilStyles.experienceList}>
+          <div className={utilStyles.experienceItem}>
+            <h3 className={utilStyles.experienceTitle}>
+              Full-Stack Developer
+              <span className={utilStyles.company}> | iLearning Solutions Pty Ltd | Adelaide, Australia</span>
+            </h3>
             <p className={utilStyles.duration}>August 2025 - Present</p>
-            <ul className={utilStyles.experienceList}>
-              <li>Leading website modernization using Next.js</li>
-              <li>Implementing MongoDB-based data structures</li>
-              <li>Enhancing website performance and SEO</li>
+            <ul>
+              <li>Contributing to the digital transformation of the company website, modernizing it from legacy version to ilearningsolutions.com</li>
+              <li>Developing scalable, responsive front-end features using React.js and Next.js to improve performance and user experience</li>
+              <li>Implementing MongoDB-based data structures for efficient content management and dynamic rendering</li>
+              <li>Collaborating with cross-functional teams to ensure smooth migration to new technology stack</li>
+              <li>Enhancing website accessibility, SEO, and load performance to increase visibility and customer engagement</li>
             </ul>
           </div>
 
-          <div className={utilStyles.experienceCard}>
-            <h3>Full Stack Developer Intern</h3>
-            <p className={utilStyles.company}>Auzbiz Consulting | Sydney</p>
+          <div className={utilStyles.experienceItem}>
+            <h3 className={utilStyles.experienceTitle}>
+              Full Stack Developer
+              <span className={utilStyles.company}> | Auzbiz Consulting | Sydney, Australia</span>
+            </h3>
             <p className={utilStyles.duration}>April 2025 - July 2025</p>
-            <ul className={utilStyles.experienceList}>
-              <li>Developed AI chatbots for customer interaction</li>
-              <li>Built responsive websites with React.js and Next.js</li>
-              <li>Implemented full-stack features and optimizations</li>
+            <ul>
+              <li>Developed web applications using Next.js and mobile apps with Flutter</li>
+              <li>Implemented AI-based chatbots for customer interaction</li>
+              <li>Created responsive and dynamic web interfaces</li>
             </ul>
           </div>
 
-          <div className={utilStyles.experienceCard}>
-            <h3>Python Intern</h3>
-            <p className={utilStyles.company}>Hindustan Times Labs | Mumbai</p>
-            <p className={utilStyles.duration}>March 2023 - August 2023</p>
-            <ul className={utilStyles.experienceList}>
-              <li>Created load testing and automation scripts</li>
-              <li>Supported development teams with testing</li>
-              <li>Improved application performance</li>
+          <div className={utilStyles.experienceItem}>
+            <h3 className={utilStyles.experienceTitle}>
+              Python and Next.js Intern
+              <span className={utilStyles.company}> | HT Labs (Hindustan Times) | Mumbai, India</span>
+            </h3>
+            <p className={utilStyles.duration}>March 2023 - September 2023</p>
+            <ul>
+              <li>Developed and executed load testing scripts to assess web application performance and ensure scalability under high traffic</li>
+              <li>Contributed to scripting and optimizing dynamic web pages using React.js and Next.js</li>
+              <li>Enhanced user experience and front-end efficiency through modern development practices</li>
             </ul>
           </div>
         </div>
