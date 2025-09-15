@@ -20,11 +20,11 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p className={utilStyles.introduction}>Full-Stack Developer</p>
+        <p className={utilStyles.introduction}>Full-Stack Developer & Web Specialist</p>
         <p>
-          A passionate Full Stack Developer specializing in Next.js and React.js with a focus on modern web development.
-          Experienced in building responsive web applications, implementing AI-driven solutions, and optimizing application
-          performance. Committed to delivering exceptional user experiences through clean, efficient, and scalable code.
+          A passionate Full Stack Developer specializing in Next.js and React.js, focused on crafting modern web experiences.
+          Expert in building responsive applications, implementing AI-driven solutions, and optimizing performance.
+          Dedicated to creating exceptional user experiences through clean, efficient, and scalable code architecture.
         </p>
       </section>
 
