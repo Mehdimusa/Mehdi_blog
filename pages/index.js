@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
         <p>
           I am a Full Stack Developer specializing in Next.js and React.js, passionate about creating modern web experiences.
           With expertise in building responsive web applications, implementing AI-driven solutions, and optimizing application
-          performance to deliver exceptional user experiences.
+          performance to deliver exceptional user experiences. I focus on creating clean, efficient, and scalable code.
         </p>
 
         
