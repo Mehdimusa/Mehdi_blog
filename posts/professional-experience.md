@@ -15,6 +15,9 @@ As a Full-Stack Developer at iLearning Solutions Pty Ltd, I'm actively contribut
 - Implementing MongoDB-based data structures for efficient content management
 - Collaborating with cross-functional teams for smooth technology migration
 - Enhancing website accessibility, SEO, and load performance
+- Tech: Next.js, React, CSS Modules, Mongodb
+
+
 
 ### Key Achievements:
 - Successfully improved website performance metrics
@@ -31,6 +34,7 @@ During my internship at Auzbiz Consulting, I gained valuable experience in moder
 - Contributed to full-stack development including front-end UI, back-end APIs, and database integration
 - Collaborated in cross-functional teams to deliver scalable and secure web applications
 - Implemented SEO best practices and performance optimizations
+- Tech: Next.js, React, CSS Modules, Python
 
 ### Technical Highlights:
 - AI chatbot development
